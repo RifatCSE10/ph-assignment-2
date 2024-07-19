@@ -65,5 +65,34 @@
         padding: 10px 30px;  
         font-size: 0.75rem;
     }
-    
+
+/* Habit section start here */
+    .habits{
+        margin-bottom: 30px;
+    }
+
+/* extra run section start */
+
+    .extra-run{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .run-text{
+        width: 100%;
+    }
+
+    .run-text h1{
+        font-size: 2rem;
+    }
+
+    .run-img{
+        width: 100%;
+    }
+
+    .run-text button{
+        padding: 13px 100px;
+    }
 }
