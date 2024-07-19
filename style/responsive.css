@@ -95,4 +95,28 @@
     .run-text button{
         padding: 13px 100px;
     }
+
+
+    /*BMI section start */
+    .bmi{
+        width: 100%;
+        margin: 50px auto;
+        flex-direction: column;
+        gap: 40px;
+        padding: 10px;
+    }
+
+    .bmi-chart{
+        width: 100%;
+    }
+
+    .bmi-calculator{
+        width: 100%;
+    }
+
+    .bmi-calculator input{
+        width: 150px;
+        height: 40px;
+    }
+
 }
