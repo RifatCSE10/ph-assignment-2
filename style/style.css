@@ -11,24 +11,22 @@ html {
   scroll-behavior: smooth;
 }
 
+
+body{
+  background-color: black;;
+}
 /*  font-family: "Playwrite CU", cursive; */
 
 /* Header section */
 .header {
   max-width: 1324px;
   margin: 0 auto;
-  border: 1px solid red;
-  /* background: linear-gradient(
+  background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
     rgba(14, 13, 13, 0) 100%
-  ); */
-
-  background: linear-gradient(
-    
-    rgb(17, 17, 17),
-    rgba(17, 17, 17, 0) 100%
   );
+  margin-bottom: 40px;
 }
 
 .header .navber {
@@ -219,4 +217,145 @@ html {
   font-weight: 400;
   margin-top: 4px;
   color: rgb(231, 222, 222);
+}
+
+
+/* Habit section start here */
+
+.habits{
+  max-width: 994px;
+  margin: 0 auto;
+}
+
+.habits h1{
+  font-size: 3.3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #ffff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.habits> p{
+  font-size: 0.89rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 25px;
+  color: #ffff;
+}
+
+.habits .habits-img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.habits .habits-img-container .card{
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+
+}
+
+.habits .habits-img-container .card .img-box{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid gray;
+  margin-bottom: 20px;
+}
+
+.habits .habits-img-container .card .img-box img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.habits .habits-img-container .card h3{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.habits .habits-img-container .card p{
+  font-size: .89rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 14px;
+  color: #fff;
+}
+
+/* extra run section start */
+
+.extra-run{
+  max-width: 994px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #222222;
+}
+
+.run-text{
+  width: 40%;
+  border: 1px solid green;
+  padding-left: 25px;
+}
+
+.run-text h1{
+  font-size: 2.7rem;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.run-text p{
+  margin-top: 20px;
+  font-size: .88rem;
+  font-family: sans-serif;
+  color: #ffff;
+  font-weight: 400;
+}
+
+
+.run-text button{
+  padding: 13px 60px;
+  border: none;
+  font-size: 0.85rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: rgb(230, 83, 60);
+  border-radius: 46px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+
+.run-img{
+  width: 40%;
+  height: fit-content;
+  border: none;
+  padding: 0;
+}
+
+.run-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
