@@ -132,4 +132,30 @@
       width: 90%;
   }
 
+
+   /*Footer section start */
+   .footer{
+       width: 100%;
+       height: fit-content;
+   }
+
+   .footer-content{
+       width: 90%;
+       margin: 0 auto;
+       grid-template-columns: repeat(1,1fr);
+       gap: 30px;
+   }
+
+   .left, .middle, .right{
+       margin: 0px;
+   }
+
+   #horizontal-line{
+       margin-top: 30px;
+   }
+
+   .footer> p{
+       margin-bottom: 0;
+   }
+
 }
