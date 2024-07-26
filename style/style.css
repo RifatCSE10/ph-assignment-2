@@ -373,15 +373,28 @@ body {
   font-weight: 600;
   color: #fff;
   font-family: sans-serif;
+  margin-top: 8%;
+  margin-bottom: 40px;
 }
 
 .bmi-chart table {
-  border: 1px solid #fff;
-  width: 80%;
+  border-collapse: collapse;
+  width: 60%;
+  font-family: Inter;
+}
+
+.bmi-chart  th, td{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 7px 10px;
+}
+
+.bmi-chart table tr th{
+  text-align: left;
+  color: #fff;
 }
 
 .bmi-chart table tr {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .bmi-calculator {
