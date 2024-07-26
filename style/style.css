@@ -1,6 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"); */
-
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +11,8 @@ html {
   scroll-behavior: smooth;
 }
 
-
-body{
-  background-color: black;;
+body {
+  background-color: black;
 }
 /*  font-family: "Playwrite CU", cursive; */
 
@@ -24,7 +23,7 @@ body{
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
-    rgba(14, 13, 13, 0) 100%
+    rgba(119, 119, 119, 0) 100%
   );
   margin-bottom: 40px;
 }
@@ -74,31 +73,35 @@ body{
   background: rgb(230, 83, 60);
 }
 
-.banner-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24%;
-    
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24%;
 }
 
-.banner-text h1{
-    font-size: 4rem;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    font-family: sans-serif;
-
-}
-
-.banner-text p{
+.banner-text h1 {
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
   font-family: sans-serif;
-  font-size: 0.69rem;
+}
+
+#cursive {
+  /* font-family: "Playwrite CU", cursive;  */
+  font-family: "Dancing Script", cursive;
+  font-weight: 300;
+}
+
+.banner-text p {
+  font-family: Inter;
+  font-size: 0.79rem;
   font-weight: 400;
-  color: rgb(231, 222, 222);
+  color: rgba(255, 255, 255, 0.5);
   margin-top: 20px;
 }
 
-.banner-btn-1{
+.banner-btn-1 {
   padding: 13px 40px;
   border: none;
   font-size: 0.85rem;
@@ -110,10 +113,9 @@ body{
   border-radius: 46px;
   margin-top: 20px;
   cursor: pointer;
-
 }
 
-.banner-btn-2{
+.banner-btn-2 {
   padding: 13px 40px;
   border: 1px solid #fff;
   font-size: 0.85rem;
@@ -128,33 +130,34 @@ body{
   cursor: pointer;
 }
 
-.banner-img{
+.banner-img {
   height: 500px;
   position: relative;
   left: -5%;
 }
 
-.banner-img img{
+.banner-img img {
   width: 100%;
   height: 100%;
 }
 
-.box-1{
+.box-1 {
   height: 70px;
   width: 150px;
-  border-radius: 14px ;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 5px;
   position: absolute;
   top: 72%;
   left: -22%;
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
 }
 
-.box-1 .circle{
+.box-1 .circle {
   height: 30px;
   width: 30px;
   background-color: rgb(230, 83, 60);
@@ -162,32 +165,29 @@ body{
   border-radius: 52%;
 }
 
-.text{
+.text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.text h3{
+.text h3 {
   font-size: 1.5rem;
-  font-weight: 600;
-  font-family: sans-serif;
+  font-weight: 900;
+  font-family: Inter;
   text-align: left;
-  color: #ffff;
+  color: rgb(250, 250, 249);
 }
 
-.text p{
+.text p {
   font-size: 0.79rem;
-  font-family: sans-serif;
+  font-family: Inter;
   font-weight: 400;
-  /* color: rgb(231, 222, 222); */
   margin-top: 3px;
-  color: rgb(231, 222, 222);
-
+  color: rgba(239, 237, 232, 0.65);
 }
 
-
-.box-2{
+.box-2 {
   height: 75px;
   width: 150px;
   display: flex;
@@ -197,56 +197,54 @@ body{
   position: absolute;
   top: 23%;
   left: 65%;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
-
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.box-2 h3{
+.box-2 h3 {
   font-size: 1.8rem;
-  font-weight: 700;
-  font-family: sans-serif;
+  font-weight: 900;
+  font-family: Inter;
   color: #fff;
-
 }
 
-.box-2 p{
+.box-2 p {
   font-size: 0.79rem;
-  font-family: sans-serif;
+  font-family: Inter;
   font-weight: 400;
   margin-top: 4px;
-  color: rgb(231, 222, 222);
+  color: rgba(255, 255, 255, 0.65);
 }
-
 
 /* Habit section start here */
 
-.habits{
+.habits {
   max-width: 994px;
   margin: 0 auto;
 }
 
-.habits h1{
+.habits h1 {
   font-size: 3.3rem;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: capitalize;
   color: #ffff;
-  font-family: sans-serif;
+  font-family: Inter;
   text-align: center;
 }
 
-.habits> p{
-  font-size: 0.89rem;
-  font-family: sans-serif;
+.habits > p {
+  font-size: 0.85rem;
+  font-family: Inter;
   font-weight: 400;
   text-align: center;
   margin-top: 14px;
   margin-bottom: 25px;
-  color: #ffff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.habits .habits-img-container{
+.habits .habits-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,17 +252,16 @@ body{
   flex-wrap: wrap;
 }
 
-.habits .habits-img-container .card{
+.habits .habits-img-container .card {
   max-width: 210px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 8px;
-
 }
 
-.habits .habits-img-container .card .img-box{
+.habits .habits-img-container .card .img-box {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -272,31 +269,31 @@ body{
   margin-bottom: 20px;
 }
 
-.habits .habits-img-container .card .img-box img{
+.habits .habits-img-container .card .img-box img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
-.habits .habits-img-container .card h3{
+.habits .habits-img-container .card h3 {
   font-size: 1.5rem;
-  font-family: sans-serif;
+  font-family: Inter;
   font-weight: 600;
   color: #fff;
 }
 
-.habits .habits-img-container .card p{
-  font-size: .89rem;
-  font-family: sans-serif;
+.habits .habits-img-container .card p {
+  font-size: 0.89rem;
+  font-family: Inter;
   font-weight: 400;
   text-align: center;
   margin-top: 14px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* extra run section start */
 
-.extra-run{
+.extra-run {
   max-width: 994px;
   margin: 50px auto;
   border: none;
@@ -306,113 +303,110 @@ body{
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  /* margin-top: 50px; */
-  background-color: #222222;
+  background: rgb(34, 34, 34);
 }
 
-.run-text{
+.run-text {
   width: 40%;
   padding-left: 25px;
 }
 
-.run-text h1{
+.run-text h1 {
   font-size: 2.7rem;
   font-weight: 800;
-  font-family: sans-serif;
+  font-family: Inter;
   color: #fff;
 }
 
-.run-text p{
+.run-text p {
   margin-top: 20px;
-  font-size: .88rem;
+  font-size: 0.88rem;
   font-family: sans-serif;
-  color: #ffff;
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
 }
 
-
-.run-text button{
+.run-text button {
   padding: 13px 60px;
   border: none;
   font-size: 0.85rem;
-  font-family: sans-serif;
+  font-family: Inter;
   font-weight: 500;
   text-transform: capitalize;
   color: #fff;
   background-color: rgb(230, 83, 60);
-  border-radius: 46px;
+  border-radius: 42px;
   margin-top: 25px;
   cursor: pointer;
 }
 
-
-.run-img{
+.run-img {
   width: 40%;
   height: fit-content;
   border: none;
   padding: 0;
 }
 
-.run-img img{
+.run-img img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 18px;
 }
-
 
 /* MBI section start */
 
-.bmi{
+.bmi {
   max-width: 1324px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  background-color: #222222;
+  background: rgb(34, 34, 34);
   /* align-items: center; */
 }
 
-.bmi-chart{
+.bmi-chart {
   width: 40%;
 }
 
-.bmi-chart h2{
+.bmi-chart h2 {
   font-size: 1.8rem;
   font-weight: 600;
   color: #fff;
   font-family: sans-serif;
-
 }
 
-.bmi-chart table{
+.bmi-chart table {
   border: 1px solid #fff;
   width: 80%;
 }
 
-.bmi-chart table tr{
+.bmi-chart table tr {
   color: #fff;
 }
 
-.bmi-calculator{
+.bmi-calculator {
   width: 50%;
 }
 
-.bmi-calculator h2{
+.bmi-calculator h2 {
+  margin-top: 40px;
   font-size: 1.8rem;
   font-weight: 600;
-  font-family: sans-serif;
+  font-family: Inter;
   color: #fff;
 }
 
-.bmi-calculator p{
-  font-size: .78rem;
+.bmi-calculator p {
+  font-size: 0.84rem;
   font-weight: 400;
-  font-family: sans-serif;
-  color: #fff;
+  font-family: Inter;
+  color: rgba(255, 255, 255, 0.5);
   margin-top: 20px;
   margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
-.bmi-calculator input{
+.bmi-calculator input {
   width: 250px;
   height: 40px;
   margin-top: 10px;
@@ -420,61 +414,63 @@ body{
   border: none;
   outline: none;
   padding-left: 10px;
-  background-color: #353333;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 7px;
   color: grey;
   font-size: 0.85rem;
 }
 
-.bmi-calculator input::placeholder{
+.bmi-calculator input::placeholder {
   font-weight: 500;
   font-size: 0.85rem;
   color: grey;
 }
-#activity{
+#activity {
   width: 78%;
 }
 
-.bmi-calculator button{
+.bmi-calculator button {
   padding: 13px 80px;
   border: none;
   font-size: 0.85rem;
-  font-family: sans-serif;
+  font-family: Inter;
   font-weight: 500;
   text-transform: capitalize;
   color: #fff;
   background-color: rgb(230, 83, 60);
   border-radius: 46px;
-  margin-top: 20px;
+  margin-top: 24px;
+  margin-bottom: 42px;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 /* Team section start */
 
-.team{
+.team {
   max-width: 994px;
   margin: 40px auto;
 }
 
-.team h1{
+.team h1 {
   font-size: 3rem;
   font-weight: 700;
-  font-family: sans-serif;
+  font-family: Inter;
   color: #fff;
   text-align: center;
 }
 
-.team> p{
+.team > p {
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: Inter;
   font-weight: 400;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   text-align: center;
   margin-top: 17px;
 }
 
-.team-img-container{
-  background-color: #222222;
+.team-img-container {
+  background: rgba(255, 255, 255, 0.1);
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -482,11 +478,10 @@ body{
   padding: 10px;
   margin-top: 50px;
   border: none;
-  border-radius: 17px;
-  
+  border-radius: 18px;
 }
 
-.team-img{
+.team-img {
   width: 310px;
   height: 300px;
   border: none;
@@ -494,13 +489,13 @@ body{
   margin: 0 auto;
 }
 
-.team-img img{
+.team-img img {
   width: 100%;
   height: 100%;
-  border-radius: 17px;
+  border-radius: 18px;
 }
 
-.team-img h3{
+.team-img h3 {
   color: #fff;
   font-weight: 600;
   font-size: 1.5rem;
@@ -510,9 +505,9 @@ body{
   left: 5%;
 }
 
-.team-img p{
-  color: #fff;
-  font-size: .85rem;
+.team-img p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
   font-weight: 400;
   font-family: sans-serif;
   position: absolute;
@@ -520,97 +515,100 @@ body{
   left: 5%;
 }
 
- /*Footer section start */
+/*Footer section start */
 
-.footer{
+.footer {
   max-width: 1324px;
   height: 400px;
-  background-color: #222222;
+  background: rgba(255, 255, 255, 0.1);
   margin: 0 auto;
 }
 
-.footer-content{
+.footer-content {
   width: 994px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 60px;
-
 }
 
-.left, .middle, .right{
+.left,
+.middle,
+.right {
   margin: 0 auto;
   margin-top: 50px;
 }
 
-.left h1{
+.left h1 {
   color: rgb(230, 83, 60);
-  font-family: sans-serif;
+  font-family: Inter;
   font-size: 3.2rem;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 0%;
   text-align: left;
 }
 
-.left p{
+.left p {
   font-size: 1rem;
-  color: #6e6e6e;
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 500;
-  font-family: sans-serif;
+  font-family: Inter;
   margin-top: 20px;
   text-align: left;
 }
 
-.middle h2{
+.middle h2 {
   font-size: 2rem;
   color: #fff;
   font-weight: 500;
   font-family: sans-serif;
 }
 
-.middle ul{
+.middle ul {
   list-style: none;
   margin-top: 20px;
 }
 
-.middle ul li{
-  font-size: 1.4rem;
-  color: #6e6e6e;
-  font-family: sans-serif;
+.middle ul li {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
   margin-top: 5px;
   font-weight: 400;
+  cursor: pointer;
 }
 
-.right h2{
+.right h2 {
   font-size: 2rem;
   color: #fff;
   font-weight: 500;
   font-family: sans-serif;
 }
 
-.right ul{
+.right ul {
   list-style: none;
   margin-top: 20px;
 }
 
-.right ul li{
-  font-size: 1.4rem;
-  color: #6e6e6e;
-  font-family: sans-serif;
+.right ul li {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
   margin-top: 5px;
   font-weight: 400;
+  cursor: pointer;
 }
 
-#horizontal-line{
-  border: 1px solid #6e6e6e;
+#horizontal-line {
+  border: 1px solid rgba(255, 255, 255, 0.1);
   max-width: 994px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
-.footer> p{
+.footer > p {
   font-size: 1rem;
-  color: #6e6e6e;
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 500;
   font-family: sans-serif;
   margin-top: 20px;
