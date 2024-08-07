@@ -73,6 +73,10 @@ body {
   background: rgb(230, 83, 60);
 }
 
+.hamburger{
+  display: none;
+}
+
 .banner-container {
   display: flex;
   justify-content: center;
